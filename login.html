@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechPlace</title>
+    <style>
+        .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <h1>En Construccion</h1>
+
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="cerrarModal()">&times;</span>
+          <p>En tech place bla bla bla......</p>
+        </div>
+      </div>
+
+      <button id="openModalButton" type="button" class="rounded-pill btn-rounded border-primary">
+        Mostrar
+      </button>
+      
+
+      <script>
+        // Obtén el botón y el modal
+var openModalButton = document.getElementById('openModalButton');
+var modal = document.getElementById('miModal');
+
+// Asigna la función para abrir el modal al hacer clic en el botón
+openModalButton.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
+
+// Asigna la función para cerrar el modal al hacer clic en la 'x'
+function cerrarModal() {
+  modal.style.display = 'none';
+}
+
+// Cierra el modal si se hace clic fuera de él
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+      </script>
+
+</body>
+</html>
