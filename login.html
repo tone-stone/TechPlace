@@ -1,85 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechPlace</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Asegúrate de agregar jQuery antes de Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>TechPlace</title>
-    <style>
-        .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
 
-    </style>
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, rgb(0 0 0 / 95%), rgb(162 0 179));
+    }
+
+
+    .contenedor {
+      margin: 50px auto;
+      width: 400px;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .contenedor h2 {
+      margin: 0 0 30px;
+      padding: 0;
+      font-size: 30px;
+      color: #4cc9f0;
+      text-align: center;
+    }
+
+    .contenedor .elemento label {
+      color: #ffff;
+    }
+
+    .contenedor .elemento input {
+      width: 100%;
+      padding: 10px 0;
+      color: #ffff;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ffff;
+      margin-bottom: 30px;
+    }
+
+    .contenedor .elemento input[type="submit"] {
+      background-color: #f72585;
+      border: none;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>En Construccion</h1>
 
-    <div id="miModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="cerrarModal()">&times;</span>
-          <p>En tech place bla bla bla......</p>
-        </div>
+
+  <div class="contenedor">
+    <h2>Login</h2>
+    <form id="forma" name="forma" method="POST">
+      <div class="elemento">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required="true" />
       </div>
+      <div class="elemento">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required="true">
+      </div>
+      <div class="elemento">
+        <input type="submit" value="Entrar" />
+      </div>
+    </form>
+  </div>
+  
 
-      <button id="openModalButton" type="button" class="rounded-pill btn-rounded border-primary">
-        Mostrar
-      </button>
-      
 
-      <script>
-        // Obtén el botón y el modal
-var openModalButton = document.getElementById('openModalButton');
-var modal = document.getElementById('miModal');
 
-// Asigna la función para abrir el modal al hacer clic en el botón
-openModalButton.addEventListener('click', function() {
-  modal.style.display = 'block';
-});
 
-// Asigna la función para cerrar el modal al hacer clic en la 'x'
-function cerrarModal() {
-  modal.style.display = 'none';
-}
 
-// Cierra el modal si se hace clic fuera de él
-window.addEventListener('click', function(event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-});
+  <script src="assets/vendors/js/glightbox.min.js"></script>
 
-      </script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+
 
 </body>
+
 </html>

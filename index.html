@@ -12,9 +12,9 @@
   <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-    <!-- Asegúrate de agregar jQuery antes de Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Asegúrate de agregar jQuery antes de Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -37,12 +37,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#servicios1">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios1">Servicios</a></li>
 
           <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas</a></li>
+
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" id="navbarNav" href="login.html">Entrar</a>
           </li>
         </ul>
         <button type="button" class="rounded-pill btn-rounded">
@@ -51,8 +52,6 @@
             <i class="fas fa-phone-alt"></i>
           </span>
         </button>
-        <a class="nav-link text-white" id="navbarNav" href="login.html">Entrar</a>
-
       </div>
     </div>
   </nav>
@@ -190,7 +189,9 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
           <div class="services__content">
             <div class="icon d-block fas fa-paper-plane"></div>
-            <a href="soporte.html"><h3 class="display-3--title mt-1">Soporte Tecnico</h3></a>
+            <a href="soporte.html">
+              <h3 class="display-3--title mt-1">Soporte Tecnico</h3>
+            </a>
             <p class="lh-lg text-white">
               Optimizamos y mantenemos tus sistemas para un rendimiento óptimo.
               Estamos aquí 24/7 para resolver cualquier problema técnico que puedas enfrentar.
@@ -203,7 +204,8 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
           <div class="services__pic">
-           <a href="soporte.html"> <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid"></a>
+            <a href="soporte.html"> <img src="images/services/service-1.png" alt="marketing illustration"
+                class="img-fluid"></a>
           </div>
         </div>
       </div>
@@ -282,9 +284,10 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="fas fa-quote-left"></i>
-                  Como Fundador y desarrollador de Tech Place, visualice la idea desde el inicio para dar vida a nuestro
-                  proyecto.
-                  Emprender y desarrollar es más que un desafío técnico; es un viaje emocionante de crecimiento y éxito.
+                  Ing. En Desarrollo de Software, especializado en el desarrollo FrontEnd. Con mas de 10 años en
+                  experiencia en soporte IT y la
+                  implementacion de soluciones mediante metodologias agiles. Investigador autodidacta en nuevas
+                  tecnologias como ioT, Apps Moviles y Ciencias de Datos.
                   <i class="fas fa-quote-right"></i>
                 <div class="ratings p-1">
                   <i class="fas fa-star"></i>
@@ -311,10 +314,10 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="fas fa-quote-left"></i>
-                  Unirme a Tech Place en sus primeras etapas fue una decisión que cambió mi carrera. Como cofundador y
-                  experto en seguridad de redes, he sido testigo del crecimiento constante y el impacto positivo que
-                  hemos logrado.
-
+                  Ing. En Telecomunicaciones, con mas de 15 años de expereicia como profesionista. Experto en
+                  infraestructura de redes y seguridad Informatica.
+                  Manejo de servidores de correo enterprice. Implementacion de servidores en la nube VPS, migraciones de
+                  sitios, hosting y dominios.
                   <i class="fas fa-quote-right"></i>
                 <div class="ratings p-1">
                   <i class="fas fa-star"></i>
@@ -332,7 +335,7 @@
               <!-- client name & role  -->
               <div class="testimonials__name">
                 <h3>Ing. Aquiles Ceron Torres</h3>
-                <p class="fw-light">Seguridad de Redes | Cofundador</p>
+                <p class="fw-light">Seguridad de Informatica | Cofundador</p>
               </div>
             </div>
             <!-- CAROUSEL ITEM 3 -->
@@ -341,11 +344,9 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="fas fa-quote-left"></i>
-                  Unirme a Tech Place con mi habilidad para el diseño fue un paso natural. Como diseñadora web y
-                  licenciada en
-                  diseño gráfico, he contribuido a dar forma a la identidad visual de la empresa y atraer a nuestros
-                  valiosos clientes.
-
+                  Lic. En Diseño Graficos, manejo de publicidad para grandes carteras de clientes a nivel industrial.
+                  Diseño responsivo y moderno UI/UX.
+                  Experta en herramientas de diseño Adobe Suite.
                   <i class="fas fa-quote-right"></i>
                 <div class="ratings p-1">
                   <i class="fas fa-star"></i>
@@ -534,17 +535,31 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-
                 <a href="https://www.gruasconspro.com/" target="_blank">
                   <h4 class="text-white">Gruas ConsPro</h4>
                 </a>
-                <p class="text-white">Ofrecemos los mejores equipos de elevación en el mercado, así como la fabricación de estructuras metálicas. 
-                  Especializados en grúas viajeras, contamos con más de 15 años de experiencia.<a href="https://www.gruasconspro.com/" class="text-white">Visita el sitio.</a> </p>
-                
+                <p class="text-white">Desarrollamos y Diseñamos de sitio WEB mediante las Tecnologias HTML, CSS,
+                  JavaScript, Bootstrap, API WhatsApp, API formulario.
+                  Migracion de dominio y hosting. Manejo de CEO, Indexacion y pocisionamiento en Google.<a
+                    href="https://www.gruasconspro.com/" class="text-white">Visita el sitio.</a> </p>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/OldSouls2024.jpg" alt="portfolio 8 image" title="portfolio 8 picture"
+              class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Old Souls Restaurante & Musica</h4>
+                <p>Servicio Tecnico</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
             <img src="images/portfolio/BelIndustrial.png" alt="portfolio 2 image" title="portfolio 2 picture"
@@ -554,13 +569,15 @@
                 <h4>BEL Industrial</h4>
                 <a href="https://belindustrial.com/" target="_blank">
                 </a>
-                <p class="text-white">Innovación en cada proceso. BEL Industrial es un referente en soluciones industriales. <a href="https://belindustrial.com/" class="text-white">Descubre más.</a></p>
-
-
+                <p class="text-white">Innovación en cada proceso. BEL Industrial es un referente en soluciones
+                  industriales.
+                  <a href="https://belindustrial.com/" class="text-white">Descubre más.</a>
+                </p>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
             <img src="images/portfolio/PROSIN.png" alt="portfolio 3 image" title="portfolio 3 picture"
@@ -614,8 +631,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/Tadi.jpeg" alt="portfolio 7 image" title="portfolio 7 picture"
-              class="img-fluid">
+            <img src="images/portfolio/Tadi.jpeg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
                 <h4>TADI</h4>
@@ -866,15 +882,15 @@
   <script>
     // Asegúrate de que el documento esté listo antes de ejecutar el código jQuery
     $(document).ready(function () {
-        // Agrega el evento hover para activar el menú desplegable al poner el cursor sobre "Servicios"
-        $('#services-dropdown').hover(
-            function () {
-                $(this).addClass('show');
-            },
-            function () {
-                $(this).removeClass('show');
-            }
-        );
+      // Agrega el evento hover para activar el menú desplegable al poner el cursor sobre "Servicios"
+      $('#services-dropdown').hover(
+        function () {
+          $(this).addClass('show');
+        },
+        function () {
+          $(this).removeClass('show');
+        }
+      );
     });
   </script>
 
@@ -884,7 +900,7 @@
   <script type="text/javascript">
     const lightbox = GLightbox({
       'touchNavigation': true,
-      'href': 'https://www.youtube.com/watch?v=hdq1Pi0em18&t=2s&ab_channel=ToneStone',
+      'href': '',
       'type': 'video',
       'source': 'youtube', //vimeo, youtube or local
       'width': 900,
