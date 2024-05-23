@@ -113,17 +113,19 @@
 
   <div class="contenedor">
     <h2>Login</h2>
-    <form id="forma" name="forma" method="POST">
+    <form id="forma" name="forma" method="">
       <div class="elemento">
         <label for="usuario">Usuario</label>
         <input type="text" id="usuario" name="usuario" required="true" />
       </div>
       <div class="elemento">
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required="true">
+        <input type="password" id="password" name="password" required="true" />
       </div>
       <div class="elemento">
-        <input type="submit" value="Entrar" />
+        <a href="./Dashboard/dash.html"><button type="button" class="btn btn-primary">
+          Entrar
+        </button></a>
       </div>
     </form>
   </div>
