@@ -7367,6 +7367,10 @@ textarea.form-control-lg {
   background-image: var(--bs-gradient) !important;
 }
 
+.bg-black{
+  background-color: #000;
+}
+
 .user-select-all {
   user-select: all !important;
 }

@@ -18,7 +18,255 @@
   <!-- Asegúrate de agregar jQuery antes de Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar {
+      height: 80px;
+    }
 
+    .navbar-brand img {
+      width: 30%;
+      height: auto;
+    }
+
+    .btn-rounded {
+      padding: 0.8375rem 1.25rem;
+    }
+
+    .intro-section {
+      padding: 100px 0;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    .intro-section .intros {
+      margin-bottom: 20px;
+    }
+
+    .intro-section .display-2--intro {
+      font-weight: bold;
+    }
+
+    .intro-section .btn-rounded {
+      background-color: #f8f9fa;
+      color: #000;
+      border: none;
+    }
+
+    .intro-section .btn-rounded:hover {
+      background-color: #e9ecef;
+    }
+
+    .video-box {
+      position: relative;
+    }
+
+    .video-box img {
+      border-radius: 20%;
+      width: 70%;
+    }
+
+    .glightbox {
+      color: #fff;
+      font-size: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .intro-section {
+        padding: 50px 0;
+      }
+
+      .intro-section .intros {
+        text-align: center;
+      }
+
+      .intro-section .video-box img {
+        width: 90%;
+      }
+    }
+
+    .intro-section {
+            padding: 100px 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        .intro-section .intros {
+            margin-bottom: 20px;
+        }
+        .intro-section .display-2--intro {
+            font-weight: bold;
+        }
+        .intro-section .btn-rounded {
+            background-color: #f8f9fa;
+            color: #000;
+            border: none;
+            padding: 0.7rem 3rem; /* Aumenta el tamaño del botón */
+            font-size: 1.25rem; /* Ajusta el tamaño del texto */
+        }
+        .intro-section .btn-rounded:hover {
+            background-color: #e9ecef;
+        }
+        .video-box {
+            position: relative;
+        }
+        .video-box img {
+            border-radius: 20%;
+            width: 70%;
+        }
+        .glightbox {
+            color: #fff;
+            font-size: 4rem;
+        }
+        @media (max-width: 768px) {
+            .intro-section {
+                padding: 50px 0;
+            }
+            .intro-section .intros {
+                text-align: center;
+            }
+            .intro-section .video-box img {
+                width: 90%;
+            }
+            .intro-section .btn-rounded {
+                width: 70%; /* Hacer que el botón ocupe todo el ancho en pantallas pequeñas */
+                padding: 1rem 0; /* Ajusta el padding para pantallas pequeñas */
+                font-size: 1.5rem;
+            }
+        }
+        .campanies {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 0;
+        }
+        .campanies h3, .campanies h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .campanies .heading-line {
+            width: 50%;
+            height: 2px;
+            background: #fff;
+            margin: 20px auto;
+        }
+        .campanies__logo-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .campanies__logo-box img {
+            max-height: 60px;
+        }
+
+        .services {
+            background-color: #000000;
+            color: #fff;
+            padding: 50px 0;
+        }
+        .services h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .services .heading-line {
+            width: 50%;
+            height: 3px;
+            background: #fff;
+            margin: 20px auto;
+        }
+        .services__content {
+            background: #14141471;
+            padding: 20px;
+            border-radius: 0.625rem;
+            margin-bottom: 1rem;
+        }
+        .services__content .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .services__content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .services__content p {
+            font-size: 1.1rem;
+        }
+        .services__pic img {
+            border-radius: 0.625rem;
+        }
+        .btn-rounded {
+            padding: 0.5rem 3rem;
+            font-size: 1.1rem;
+        }
+
+        .portfolio {
+            background-color: #222;
+            color: #fff;
+            padding: 50px 0;
+        }
+        .portfolio h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .portfolio .heading-line {
+            width: 100px;
+            height: 3px;
+            background-color: #fff;
+            margin: 20px auto;
+        }
+        .portfolio .lead {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .portfolio-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .portfolio-box img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        .portfolio-box:hover img {
+            transform: scale(1.1);
+        }
+        .portfolio-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            width: 100%;
+            padding: 15px;
+            transition: background 0.3s;
+        }
+        .portfolio-info .caption {
+            text-align: center;
+        }
+        .portfolio-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .portfolio-info p {
+            font-size: 1rem;
+        }
+        .portfolio-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .portfolio-info a:hover {
+            color: #ddd;
+        }
+        .portfolio-buttons {
+            margin-bottom: 40px;
+        }
+        .portfolio-buttons .btn {
+            margin: 0 10px;
+        }
+
+  </style>
 </head>
 
 <body>
@@ -26,10 +274,10 @@
   <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                SECTION 1 - NAVBAR  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
-  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top bg-dark" style="height: 80px;">
-    <div class="container" >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow fixed-top">
+    <div class="container">
       <a class="navbar-brand" href="#home">
-        <img src="./images/logoLetra.png" alt=""  style="width: 30%; height: auto;">
+        <img src="./images/logoLetra.png" alt="TechPlace Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,26 +287,14 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicios1">Servicios</a></li>
-
           <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" id="navbarNav" href="login.html">Entrar</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Entrar</a></li>
         </ul>
-
-           <div class="container justify-content-end">
-          <a href="https://wa.me/526643425615" target="_blank">
-           
-            <button type="button" class="rounded-pill btn-rounded" style="color: blueviolet;
-             padding:1.8375rem 4.375rem 0.8375rem 1.25rem;" >
-              <span>
-                <i class="fas fa-phone-alt"></i>
-              </span>
-            </button>
-          </a>
-         </div>
-        
+        <a href="https://wa.me/526643425615" target="_blank" class="btn btn-primary rounded-pill ms-lg-3 mt-2 mt-lg-0">
+          <i class="fas fa-phone-alt"></i>
+        </a>
       </div>
     </div>
   </nav>
@@ -67,256 +303,210 @@
                             SECTION 2 - BANNER 
 /////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-  <section id="home" class="intro-section ">
+  <section id="home" class="intro-section">
     <div class="container">
       <div class="row align-items-center text-white">
-        <!-- START THE CONTENT FOR THE INTRO  -->
-        <div class="col-md-6 intros text-start">
+        <!-- START THE CONTENT FOR THE INTRO -->
+        <div class="col-md-6 intros text-md-start text-center">
           <h1 class="display-2">
             <span class="display-2--intro">Bienvenidos a TechPlace</span>
-            <span class="display-2--description lh-base">
-              Soluciones Tecnológicas a Tu Alcance.
-            </span>
+            <span class="display-2--description lh-base">Transformamos tus ideas en realidades digitales con
+              soluciones tecnológicas innovadoras.</span>
           </h1>
           <a href="#contacto">
-            <button type="button" class="rounded-pill btn-rounded" >Contactanos
+            <button type="button" class="rounded-pill btn-rounded " 
+            style="box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.6);" >Contáctanos
               <span><i class="fas fa-arrow-right"></i></span>
-            </button></a>
+            </button>
+          </a>
         </div>
         <!-- START THE CONTENT FOR THE VIDEO -->
         <div class="col-md-6 intros text-center">
           <div class="video-box">
-            <img src="images/LogoTech.png" alt="video illutration" class="img-fluid" 
-            style="border-radius: 20%;width: 50%;">
-            <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
-              <span>
-                <i class="fas fa-play-circle"></i>
-              </span>
-              <span class="border-animation border-animation--border-1"></span>
-              <span class="border-animation border-animation--border-2"></span>
-            </a>
+            <img src="images/LogoTech.png" alt="video illustration" class="img-fluid" 
+            style="box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.6);">
+            <!--<a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                      <span><i class="fas fa-play-circle"></i></span>
+                      <span class="border-animation border-animation--border-1"></span>
+                      <span class="border-animation border-animation--border-2"></span>
+                  </a> -->
           </div>
-        </div> 
+        </div>
       </div>
     </div>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#00000" fill-opacity="1"
-        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg> -->
-    <br><br><br><br>
   </section>
-<br><br><br>
 
 
   <!-- //////////////////////////////////////////////////////////////////////////////////////////////
                              START SECTION 3 - THE CAMPANIES SECTION  
   ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
   <section id="campanies" class="campanies">
-    <div class="container">
-      <div class="row text-center">
-        <h3 class="fw-bold lead mb-3">Ofrecemos soluciones integrales en desarrollo web, seguridad informática y más, 
-          adaptadas a tus necesidades.</h3>
-          <h4 class="fw-bold lead mb-3">En TechPlace, transformamos tus ideas en realidades digitales. Con nuestro equipo de expertos, 
-            garantizamos servicios de calidad y seguridad para tu negocio. ¡Descubre más!.</h4>
-        <div class="heading-line mb-5">
-          
-        </div>
-      </div>
+    <div class="container text-center">
+        <h3 class="fw-bold lead mb-3">Ofrecemos soluciones integrales en desarrollo web, seguridad informática y más, adaptadas a tus necesidades.</h3>
+        <h4 class="fw-bold lead mb-3">En TechPlace, transformamos tus ideas en realidades digitales. Con nuestro equipo de expertos, garantizamos servicios de calidad y seguridad para tu negocio. ¡Descubre más!.</h4>
+        <div class="heading-line mb-5"></div>
     </div>
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-1.png" alt="Campany 1 logo" title="Campany 1 Logo" class="img-fluid">
-          </div>
+    <div id="carouselLogos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-4 col-md-2">
+                        <div class="campanies__logo-box">
+                            <img src="images/campanies/campany-1.png" alt="Campany 1 logo" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="campanies__logo-box">
+                            <img src="images/campanies/campany-2.png" alt="Campany 2 logo" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="campanies__logo-box">
+                            <img src="images/campanies/campany-3.png" alt="Campany 3 logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-4 col-md-2">
+                        <div class="campanies__logo-box">
+                            <img src="images/campanies/campany-4.png" alt="Campany 4 logo" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="campanies__logo-box">
+                            <img src="images/campanies/campany-5.png" alt="Campany 5 logo" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="campanies__logo-box">
+                            <img src="images/campanies/campany-6.png" alt="Campany 6 logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-2.png" alt="Campany 2 logo" title="Campany 2 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-3.png" alt="Campany 3 logo" title="Campany 3 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-4.png" alt="Campany 4 logo" title="Campany 4 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-5.png" alt="Campany 5 logo" title="Campany 5 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-6.png" alt="Campany 6 logo" title="Campany 6 Logo" class="img-fluid">
-          </div>
-        </div>
-      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLogos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLogos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    </div>
-  </section>
-
-
-
+</section>
 
 
   <!-- //////////////////////////////////////////////////////////////////////////////////////////////
                          START SECTION 4 - THE SERVICES  
 ///////////////////////////////////////////////////////////////////////////////////////////////////-->
-  <section id="servicios1" class="services">
-    <div class="container">
+  
+<section id="servicios1" class="services">
+  <div class="container">
       <div class="row text-center">
-        <h1 class="display-3 fw-bold text-white">Nuestros Servicios</h1>
-        <div class="heading-line mb-1"></div>
+          <h1 class="display-3 fw-bold">Nuestros Servicios</h1>
+          <div class="heading-line mb-4"></div>
       </div>
       <!-- START THE DESCRIPTION CONTENT  -->
-      <div class="row pt-2 pb-2 mt-0 mb-3">
-        <div class="col-md-6 border-right">
-          <div class=" p-3" style="border-radius: 0.625rem;">
-            <h2 class="fw-bold text-capitalize text-center text-light">
-              Analizamos tus necesidades y diseñamos soluciones a medida.
-            </h2>
+      <div class="row pt-2 pb-2 mt-0 mb-3 text-center">
+          <div class="col-md-6 border-right">
+              <div class="p-3" style="border-radius: 0.625rem;">
+                  <h2 class="fw-bold text-capitalize">
+                      Analizamos tus necesidades y diseñamos soluciones a medida.
+                  </h2>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class=" p-4 text-start" style="border-radius: 0.625rem;">
-            <p class="fw-light text-light">
-              En Tech Place, estamos comprometidos a ofrecerte soluciones de vanguardia en servicios de IT,
-              desarrollo de software y seguridad informática. Nos enorgullece ser tu socio tecnológico, brindándote
-              las herramientas y el conocimiento necesario para impulsar el éxito de tu negocio en la era digital.
-            </p>
+          <div class="col-md-6">
+              <div class="p-4">
+                  <p class="fw-light">
+                      En Tech Place, estamos comprometidos a ofrecerte soluciones de vanguardia en servicios de IT,
+                      desarrollo de software y seguridad informática. Nos enorgullece ser tu socio tecnológico,
+                      brindándote las herramientas y el conocimiento necesario para impulsar el éxito de tu negocio
+                      en la era digital.
+                  </p>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
 
-    <!-- START THE CONTENT FOR THE SERVICES  -->
-    <div class="container">
-      <!-- START THE MARKETING CONTENT  -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="icon d-block fas fa-paper-plane"></div>
-            <a href="soporte.html">
-              <h3 class="display-3--title mt-1">Soporte Tecnico</h3>
-            </a>
-            <ul class="lh-lg text-white">
-              <li>
-                <p class="lh-lg text-white">Optimizamos y mantenemos tus sistemas para un rendimiento óptimo.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Diagnosticos confiables en deteccion de fallos y errores de
-                  Hardware/Software, IoT.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white">Especialistas en reparaciones de equipos Gamer de Alta Gama.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Venta y instalacion de Puntos de Venta POS.</p>
-              </li>
-            </ul>
-
-            <a href="soporte.html">
-              <button type="button" class="rounded-pill btn-rounded border-primary">Leer mas
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button></a>
+  <!-- START THE CONTENT FOR THE SERVICES  -->
+  <div class="container">
+      <!-- START THE SUPPORT CONTENT  -->
+      <div class="row align-items-center mb-5">
+          <div class="col-lg-6 col-md-6 col-sm-12 services__pic">
+              <img src="images/services/service-1.png" alt="Soporte Técnico" class="img-fluid">
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-          <div class="services__pic">
-            <a href="soporte.html"> <img src="images/services/service-1.png" alt="marketing illustration"
-                class="img-fluid"></a>
+          <div class="col-lg-6 col-md-6 col-sm-12 services">
+              <div class="services__content text-center" style="box-shadow: 14px 14px 20px 0 rgba(66, 0, 104, 0.6);">
+                  <div class="icon d-block fas fa-paper-plane" ></div>
+                  <h3 class="display-3--title mt-1">Soporte Técnico</h3>
+                  <p class="fw-light">Optimizamos y mantenemos tus sistemas para un rendimiento óptimo.</p>
+                  <p class="fw-light">Diagnósticos confiables en detección de fallos y errores de Hardware/Software, IoT.</p>
+                  <p class="fw-light">Especialistas en reparaciones de equipos Gamer de Alta Gama.</p>
+                  <p class="fw-light">Venta e instalación de Puntos de Venta POS.</p>
+                  <a href="soporte.html">
+                      <button type="button" class="rounded-pill btn-rounded border-primary">Leer más
+                          <span><i class="fas fa-arrow-right"></i></span>
+                      </button>
+                  </a>
+              </div>
           </div>
-        </div>
       </div>
-      <!-- START THE WEB DEVELOPMENT CONTENT  -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
-          <div class="services__pic">
-            <img src="images/services/service-2.png" alt="web development illustration" class="img-fluid">
+      <!-- START THE DEVELOPMENT CONTENT  -->
+      <div class="row align-items-center mb-5">
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-2 services__pic">
+              <img src="images/services/service-2.png" alt="Desarrollo de Software" class="img-fluid">
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="icon d-block fas fa-code"></div>
-            <h3 class="display-3--title mt-1">Desarrollo de Software</h3>
-            <ul class="lh-lg text-white">
-              <li>
-                <p class="lh-lg text-white"> Desarrollamos sistemas a tu medida, con funcionalidades adaptadas a tus
-                  necesidades.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Creamos aplicasiones web atractivas y funcionales que se adaptan a
-                  cualquier dispositivo.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Soluciones de software personalizadas para cumplir con tus objetivos
-                  específicos.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Manejo de CEO para Tiendas Virtuales, Menus Digitales y Encuestas QR.</p>
-              </li>
-            </ul>
-
-            <a href="desarrollo.html">
-              <button type="button" class="rounded-pill btn-rounded border-primary">Leer mas
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button></a>
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-1 services">
+              <div class="services__content text-center" style="box-shadow: -14px 14px 20px 0 rgba(66, 0, 104, 0.6);">
+                  <div class="icon d-block fas fa-code"></div>
+                  <h3 class="display-3--title mt-1">Desarrollo de Software</h3>
+                  <p class="fw-light">Desarrollamos sistemas a tu medida, con funcionalidades adaptadas a tus necesidades.</p>
+                  <p class="fw-light">Creamos aplicaciones web atractivas y funcionales que se adaptan a cualquier dispositivo.</p>
+                  <p class="fw-light">Soluciones de software personalizadas para cumplir con tus objetivos específicos.</p>
+                  <p class="fw-light">Manejo de CEO para Tiendas Virtuales, Menús Digitales y Encuestas QR.</p>
+                  <a href="desarrollo.html">
+                      <button type="button" class="rounded-pill btn-rounded border-primary">Leer más
+                          <span><i class="fas fa-arrow-right"></i></span>
+                      </button>
+                  </a>
+              </div>
           </div>
-        </div>
       </div>
-      <!-- START THE CLOUD HOSTING CONTENT  -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="icon d-block fas fa-cloud-upload-alt"></div>
-            <h3 class="display-3--title mt-1">Seguridad Informatica</h3>
-            <ul class="lh-lg text-white">
-              <li>
-                <p class="lh-lg text-white"> Identificamos y corregimos vulnerabilidades en tu infraestructura de red.
-                </p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Protegemos tus activos digitales contra ciberataques.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Despliegue de servidores fisicos y en la nube (AWS, AZURE).</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Migraciones de hosting, dominios y correo electronico empresarial.</p>
-              </li>
-              <li>
-                <p class="lh-lg text-white"> Venta e Instalacion de Camaras de Seguridad Wifi.</p>
-              </li>
-            </ul>
-
-            <a href="./seguridad.html">
-              <button type="button" class="rounded-pill btn-rounded border-primary">Leer mas
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button></a>
+      <!-- START THE SECURITY CONTENT  -->
+      <div class="row align-items-center mb-5">
+          <div class="col-lg-6 col-md-6 col-sm-12 services__pic">
+              <img src="images/services/service-3.png" alt="Seguridad Informática" class="img-fluid">
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-          <div class="services__pic">
-            <img src="images/services/service-3.png" alt="cloud hosting illustration" class="img-fluid">
+          <div class="col-lg-6 col-md-6 col-sm-12 services">
+              <div class="services__content text-center" style="box-shadow: 14px 14px 20px 0 rgba(66, 0, 104, 0.6);">
+                  <div class="icon d-block fas fa-cloud-upload-alt"></div>
+                  <h3 class="display-3--title mt-1">Seguridad Informática</h3>
+                  <p class="fw-light">Identificamos y corregimos vulnerabilidades en tu infraestructura de red.</p>
+                  <p class="fw-light">Protegemos tus activos digitales contra ciberataques.</p>
+                  <p class="fw-light">Despliegue de servidores físicos y en la nube (AWS, AZURE).</p>
+                  <p class="fw-light">Migraciones de hosting, dominios y correo electrónico empresarial.</p>
+                  <p class="fw-light">Venta e instalación de Cámaras de Seguridad Wifi.</p>
+                  <a href="seguridad.html">
+                      <button type="button" class="rounded-pill btn-rounded border-primary">Leer más
+                          <span><i class="fas fa-arrow-right"></i></span>
+                      </button>
+                  </a>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <br><br>
+  </div>
+</section>
+
 
   <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
                                START SECTION 5 - THE TESTIMONIALS  
 /////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-  <section id="nosotros" class="testimonials">
+  <section id="nosotros" class="testimonials" style="background: linear-gradient(to right, rgb(37 37 37 / 95%), rgb(231 0 255 / 95%));">
     <br><br><br><br>
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#00000" fill-opacity="1"
@@ -443,240 +633,193 @@
     </svg> -->
     <br><br><br><br>
   </section>
- 
+
 
 
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
                               START SECTION 7 - THE PORTFOLIO  
 //////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-  <section id="portfolio" class="portfolio">
-    <div class="container">
+<section id="portfolio" class="portfolio">
+  <div class="container">
       <div class="row text-center mt-5">
-        <h1 class="display-3 fw-bold text-capitalize text-white">Explora Nuestro Portafolio</h1>
-        <div class="heading-line"></div>
-        <p class="lead text-white">
-          En Tech Place, cada línea de código y cada solución tecnológica son testimonios tangibles de nuestro
-          compromiso con la excelencia. Te invitamos a explorar nuestro portafolio, donde la innovación y la creatividad
-          se fusionan para dar vida a proyectos emocionantes y exitosos.
-        </p>
+          <h1 class="display-3 fw-bold text-capitalize">Explora Nuestro Portafolio</h1>
+          <div class="heading-line"></div>
+          <p class="lead">En Tech Place, cada línea de código y cada solución tecnológica son testimonios tangibles de nuestro compromiso con la excelencia. Te invitamos a explorar nuestro portafolio, donde la innovación y la creatividad se fusionan para dar vida a proyectos emocionantes y exitosos.</p>
       </div>
-      <!-- FILTER BUTTONS  -->
-      <div class="row mt-5 mb-4 g-3 text-center">
-        <div class="col-md-12">
-          <button class="btn btn-outline-primary active" type="button">Todos</button>
-          <button class="btn btn-outline-primary" type="button">Websites</button>
-          <button class="btn btn-outline-primary" type="button">Desarrollos</button>
-          <button class="btn btn-outline-primary" type="button">Soporte</button>
-        </div>
+      <!-- FILTER BUTTONS -->
+      <div class="row mt-5 mb-4 text-center portfolio-buttons">
+          <div class="col-md-12">
+              <button class="btn btn-outline-primary active" type="button">Todos</button>
+              <button class="btn btn-outline-primary" type="button">Websites</button>
+              <button class="btn btn-outline-primary" type="button">Desarrollos</button>
+              <button class="btn btn-outline-primary" type="button">Soporte</button>
+          </div>
       </div>
-
-      <!-- START THE PORTFOLIO ITEMS  -->
+      <!-- START THE PORTFOLIO ITEMS -->
       <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/cervantes.png" alt="portfolio 1 image" title="portfolio 1 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <a href="https://www.cervantes-quijano.com/" target="_blank">
-                  <h4 class="text-white">Cervantes-Quijano</h4>
-                </a>
-                <p class="text-white">Diseño y Desarrollo WEB. Tecnologias: HTML, CSS,
-                  JavaScript, Bootstrap, API GoogleMaps, API formulario. Manejo de CEO, Indexacion y pocisionamiento en Google.<a
-                    href="https://www.cervantes-quijano.com/" target="_blank" class="text-white"> Visita el sitio.</a>
-                </p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/cervantes.png" alt="portfolio 1 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://www.cervantes-quijano.com/" target="_blank">
+                              <h4>Cervantes-Quijano</h4>
+                          </a>
+                          <p>Diseño y Desarrollo WEB. Tecnologías: HTML, CSS, JavaScript, Bootstrap, API GoogleMaps, API formulario. Manejo de SEO, Indexación y posicionamiento en Google.<a href="https://www.cervantes-quijano.com/" target="_blank" class="text-white"> Visita el sitio.</a></p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/BajaSupply.png" alt="portfolio 4 image" title="portfolio 4 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <a href="https://industrialbajasupply.com/" target="_blank"><h4 class="text-white">Industrial BajaSupply</h4></a>
-               
-                <p class="text-white">Diseño y Desarrollo WEB. Tecnologias: HTML, CSS,
-                  JavaScript, Bootstrap, API GoogleMaps, API formulario.</p>
-                <a href="https://industrialbajasupply.com/" target="_blank" class="text-white"> Visita el sitio.</a>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/BajaSupply.png" alt="portfolio 4 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://industrialbajasupply.com/" target="_blank">
+                              <h4>Industrial BajaSupply</h4>
+                          </a>
+                          <p>Diseño y Desarrollo WEB. Tecnologías: HTML, CSS, JavaScript, Bootstrap, API GoogleMaps, API formulario.<a href="https://industrialbajasupply.com/" target="_blank" class="text-white"> Visita el sitio.</a></p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/Tadi.jpeg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <h4>TADI</h4>
-                <p>Desarrollo de Landing page para el lanzamiento de la APP Tadi</p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/Tadi.jpg" alt="portfolio 7 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <h4>TADI</h4>
+                          <p>Desarrollo de Landing page para el lanzamiento de la APP Tadi</p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/GruasCons.png" alt="portfolio 1 image" title="portfolio 1 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <a href="https://www.gruasconspro.com/" target="_blank">
-                  <h4 class="text-white">Gruas ConsPro</h4>
-                </a>
-                <p class="text-white">Diseño y Desarrollo WEB. Tecnologias: HTML, CSS,
-                  JavaScript, Bootstrap, API GoogleMaps, API formulario. Manejo de CEO, Indexacion y pocisionamiento en Google.<a
-                    href="https://www.gruasconspro.com/" target="_blank" class="text-white"> Visita el sitio.</a> </p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/GruasCons.png" alt="portfolio 1 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://www.gruasconspro.com/" target="_blank">
+                              <h4>Gruas ConsPro</h4>
+                          </a>
+                          <p>Diseño y Desarrollo WEB. Tecnologías: HTML, CSS, JavaScript, Bootstrap, API GoogleMaps, API formulario. Manejo de SEO, Indexación y posicionamiento en Google.<a href="https://www.gruasconspro.com/" target="_blank" class="text-white"> Visita el sitio.</a></p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/OldSouls2024.jpg" alt="portfolio 8 image" title="portfolio 8 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <a href="https://www.facebook.com/profile.php?id=100057496627768" target="_blank">
-                  <h4 class="text-white">Old Souls Restaurante & Musica</h4>
-                </a>
-                <p class="text-white">Instalacion de Camaras de Seguridad. Servicio Tecnico. 
-                  <a href="https://www.facebook.com/profile.php?id=100057496627768" target="_blank" class="text-white"> Visita el sitio.</a> </p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/OldSouls2024.jpg" alt="portfolio 8 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://www.facebook.com/profile.php?id=100057496627768" target="_blank">
+                              <h4>Old Souls Restaurante & Musica</h4>
+                          </a>
+                          <p>Instalación de Cámaras de Seguridad. Servicio Técnico. Implementacion de Punto de Venta<a href="https://www.facebook.com/profile.php?id=100057496627768" target="_blank" class="text-white"> Visita el sitio.</a></p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/PROSIN.png" alt="portfolio 3 image" title="portfolio 3 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <a href="https://prosin.com.mx/" target="_blank">
-                  <h4 class="text-white">PROSIN</h4>
-                </a>
-                <p class="text-white">Diseño y Desarrollo WEB. Tecnologias: HTML, CSS,
-                  JavaScript, Bootstrap, API GoogleMaps, API formulario. Administracion de Email Empresarial. <a
-                    href="https://prosin.com.mx/" target="_blank" class="text-white"> Visita el sitio.</a> </p>
-               
-                </a>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/PROSIN.png" alt="portfolio 3 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://prosin.com.mx/" target="_blank">
+                              <h4>PROSIN</h4>
+                          </a>
+                          <p>Diseño y Desarrollo WEB. Tecnologías: HTML, CSS, JavaScript, Bootstrap, API GoogleMaps, API formulario. Administración de Email Empresarial.<a href="https://prosin.com.mx/" target="_blank" class="text-white"> Visita el sitio.</a></p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/BelIndustrial.png" alt="portfolio 2 image" title="portfolio 2 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <h4>BEL Industrial</h4>
-                <a href="https://belindustrial.com/" target="_blank">
-                </a>
-                <p class="text-white">Innovación en cada proceso. BEL Industrial es un referente en soluciones
-                  industriales.
-                  <a href="https://belindustrial.com/" class="text-white">Descubre más.</a>
-                </p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/BelIndustrial.png" alt="portfolio 2 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://belindustrial.com/" target="_blank">
+                              <h4>BEL Industrial</h4>
+                          </a>
+                          <p>Innovación en cada proceso. BEL Industrial es un referente en soluciones industriales.<a href="https://belindustrial.com/" class="text-white"> Descubre más.</a></p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/WaveContinental.png" alt="portfolio 6 image" title="portfolio 6 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <h4>Wave Continental</h4>
-                <p>Sitio Desarrolado con SASS</p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/WaveContinental.png" alt="portfolio 6 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <h4>Wave Continental</h4>
+                          <p>Sitio desarrollado con SASS</p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/DSLIndustrial.png" alt="portfolio 5 image" title="portfolio 5 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <h4>DSL Industrial</h4>
-                <p>Sitio Desarrollado con CSS puro</p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/DSLIndustrial.png" alt="portfolio 5 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <h4>DSL Industrial</h4>
+                          <p>Sitio desarrollado con CSS puro</p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/TacosElRey2024.png" alt="portfolio 9 image" title="portfolio 9 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <a href="https://tone-stone.github.io/MenuTacosElReyDeTijuana/" target="_blank">
-                  <h4 class="text-white">Tacos El Rey De Tijuana</h4>
-                </a>
-                <ul>
-                  <li>
-                    Implementacion de Punto de Venta
-                  </li>
-                  <li class="text-white">
-                   
-                    <a href="https://tone-stone.github.io/MenuTacosElReyDeTijuana/" target="_blank">
-                      <p class="text-white">Desarrollo Menu Digital y Encuesta de Satisfaccion QR</p>
-                    </a>
-                  </li>
-                </ul>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/TacosElRey2024.png" alt="portfolio 9 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://tone-stone.github.io/MenuTacosElReyDeTijuana/" target="_blank">
+                              <h4>Tacos El Rey De Tijuana</h4>
+                          </a>
+                          <ul>
+                              <li>Implementación de Punto de Venta</li>
+                              <li><a href="https://tone-stone.github.io/MenuTacosElReyDeTijuana/" target="_blank" class="text-white">Desarrollo Menú Digital y Encuesta de Satisfacción QR</a></li>
+                          </ul>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/vidal.png" alt="portfolio 5 image" title="portfolio 5 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <h4>Vidal Publicidad</h4>
-                <a href="https://vidalpublicidad.com.mx/"><h4>Vidal Publicidad</h4></a>
-                <p>Sitio Creado con WordPress</p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/vidal.png" alt="portfolio 5 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://vidalpublicidad.com.mx/" target="_blank">
+                              <h4>Vidal Publicidad</h4>
+                          </a>
+                          <p>Sitio creado con WordPress</p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-box shadow">
-            <img src="images/portfolio/SPSIntegration.png" alt="portfolio 5 image" title="portfolio 5 picture"
-              class="img-fluid">
-            <div class="portfolio-info">
-              <div class="caption">
-                <h4>SPS Integration</h4>
-                <a href="https://tone-stone.github.io/CocinasCAT/"><h4>SPS Integration</h4></a>
-                <p>Sitio Creado con WordPress</p>
+          <div class="col-lg-4 col-md-6">
+              <div class="portfolio-box shadow">
+                  <img src="images/portfolio/SPSIntegration.png" alt="portfolio 5 image" class="img-fluid">
+                  <div class="portfolio-info">
+                      <div class="caption">
+                          <a href="https://tone-stone.github.io/CocinasCAT/" target="_blank">
+                              <h4>SPS Integration</h4>
+                          </a>
+                          <p>Sitio creado con WordPress</p>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-
       </div>
-    </div>
-  </section>
-  <br><br><br><br>
+  </div>
+</section>
+
 
   <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
                        START SECTION 6 - THE FAQ 
 //////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<br><br>
   <section id="preguntas" class="faq">
     <div class="container">
       <div class="row text-center">
@@ -826,7 +969,8 @@
             <h4 class="display-3--title mb-5">Comienza tu Proyecto</h4>
             <form action="https://formsubmit.co/tonnestone@gmail.com" method="POST" class="row">
               <div class="col-lg-6 col-md mb-3">
-                <input type="text" placeholder="Nombre" id="inputFirstName" name="name" class="shadow form-control form-control-lg">
+                <input type="text" placeholder="Nombre" id="inputFirstName" name="name"
+                  class="shadow form-control form-control-lg">
               </div>
               <div class="col-lg-6 col-md mb-3">
                 <input type="phonenumber" placeholder="Telefono" id="inputLastName" name="phonenumber"
@@ -872,7 +1016,7 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a  href="https://wa.me/526643425615" target="_blank" class="contact-box__info--title">664 342-5615</a>
+            <a href="https://wa.me/526643425615" target="_blank" class="contact-box__info--title">664 342-5615</a>
             <p class="contact-box__info--subtitle"> Mon-Fri 9am-5pm</p>
           </div>
         </div>
@@ -941,7 +1085,7 @@
           <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
           <p class="lh-lg">
             Nos enorgullece ser tu socio tecnológico, brindándote<br>
-            las herramientas y el conocimiento necesario para impulsar  <br>  el éxito de tu negocio en la era digital.
+            las herramientas y el conocimiento necesario para impulsar <br> el éxito de tu negocio en la era digital.
 
           </p>
         </div>
@@ -1029,6 +1173,13 @@
     });
 
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
